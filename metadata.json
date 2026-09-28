@@ -1,0 +1,6 @@
+{
+  "name": "Momoko's adventure",
+  "description": "Momoko's adventure: Game phiêu lưu hành động Momoko cầu vồng cùng pet cá sấu Wani vượt ải thử thách tri thức môn học.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

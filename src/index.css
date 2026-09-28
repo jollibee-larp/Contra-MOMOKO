@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arcade: 'Press Start 2P', monospace;
+    --font-display: 'Chakra Petch', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+.font-arcade {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.font-display {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.arcade-glow {
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.6), 0 0 16px rgba(239, 68, 68, 0.4);
+}
+
+.neon-blue-glow {
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.7), 0 0 16px rgba(14, 165, 233, 0.5);
+}
