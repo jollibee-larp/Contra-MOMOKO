@@ -3,6 +3,8 @@ import { Play, BookOpen, HelpCircle, Sparkles, Heart, Star, Compass } from 'luci
 import { STAGES } from '../data/stages';
 import { CATEGORY_LABELS } from '../data/defaultQuestions';
 import { Question } from '../types/game';
+import momokoBannerImg from '../assets/images/momoko_rainbow_banner_1790566973498.jpg';
+import momokoAvatarImg from '../assets/images/momoko_wani_avatar_1790566990793.jpg';
 
 interface TitleScreenProps {
   onStartGame: (stageId: number, category: string) => void;
@@ -38,8 +40,8 @@ export const TitleScreen: React.FC<TitleScreenProps> = ({
       <div className="relative rounded-2xl overflow-hidden border-2 border-pink-500/70 bg-slate-900 shadow-2xl">
         <div className="relative h-64 sm:h-80 w-full overflow-hidden">
           <img
-            src="/src/assets/images/magical_girl_banner_1790563085172.jpg"
-            alt="Magical Girls Heroine Banner"
+            src={momokoBannerImg}
+            alt="Momoko Rainbow & Wani Banner"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center brightness-95 filter contrast-105"
             onError={(e) => {
@@ -210,8 +212,8 @@ export const TitleScreen: React.FC<TitleScreenProps> = ({
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl bg-gradient-to-r from-purple-950/80 via-slate-900 to-pink-950/80 border-2 border-pink-500/60 shadow-xl">
         <div className="flex items-center gap-3">
           <img
-            src="/src/assets/images/magical_girl_hero_1790563102278.jpg"
-            alt="Magical Girl Heroine"
+            src={momokoAvatarImg}
+            alt="Momoko Rainbow & Wani Avatar"
             referrerPolicy="no-referrer"
             className="w-14 h-14 rounded-xl border-2 border-pink-400 object-cover shrink-0 shadow-md shadow-pink-500/30"
             onError={(e) => {
